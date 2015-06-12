@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nd_home">Home</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_markadd">mark add</string>
+    <string name="title_activity_mark_add">MarkAddActivity</string>
+    <string name="title_activity_mark_detail">MarkDetailActivity</string>
+    <string name="title_activity_lat_long_select">LatLongSelectActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_tour">TourActivity</string>
+</resources>

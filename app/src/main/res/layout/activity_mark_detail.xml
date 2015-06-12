@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.testapp.activities.MarkDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MarkName"
+        android:id="@+id/markNameText"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MarkDescription"
+        android:id="@+id/markDescText"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/markNameText"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignEnd="@+id/toolbar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show on map"
+        android:id="@+id/showMapBtn"
+        android:onClick="onShowMapBtnClick"
+        android:layout_below="@+id/markDescText"
+        android:layout_toStartOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Comments"
+        android:id="@+id/textView"
+        android:layout_below="@+id/showMapBtn"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editComment"
+        android:layout_alignParentStart="true"
+        android:hint="Your comment"
+        android:layout_toStartOf="@+id/sendBtn"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:id="@+id/sendBtn"
+        android:layout_alignBottom="@+id/editComment"
+        android:layout_alignParentEnd="true"
+        android:onClick="onSendCommentBtnClick" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentsListView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editComment"
+        android:choiceMode="none" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show direction"
+        android:id="@+id/showDirBtn"
+        android:layout_below="@+id/markDescText"
+        android:layout_toStartOf="@+id/sendBtn"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onShowDirectionClick" />
+
+</RelativeLayout>

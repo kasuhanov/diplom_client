@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.testapp.activities.MarkAddActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progBar"
+        android:indeterminate="false"
+        android:layout_above="@+id/sendBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to server"
+        android:id="@+id/sendBtn"
+        android:onClick="onSendButtonClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/currLatLongBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/progBar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select coordinates"
+        android:id="@+id/currLatLongBtn"
+        android:onClick="onSelectCoordClick"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/progBar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/markEditText"
+        android:hint="Mark name"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/latEditText"
+        android:hint="Latitude"
+        android:layout_below="@+id/markEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/longEditText"
+        android:hint="Longitude"
+        android:layout_below="@+id/latEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/latEditText"
+        android:editable="false"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/descEditText"
+        android:hint="Description"
+        android:layout_below="@+id/longEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load image"
+        android:id="@+id/loadImgBtn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onLoadImageClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sendimg"
+        android:id="@+id/button"
+        android:layout_below="@+id/loadImgBtn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
