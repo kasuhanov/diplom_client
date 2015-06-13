@@ -12,4 +12,5 @@
     <string name="title_activity_account">AccountActivity</string>
     <string name="title_activity_tour">TourActivity</string>
     <string name="title_activity_hotel_select">HotelSelectActivity</string>
+    <string name="title_activity_room_select">RoomSelectActivity</string>
 </resources>

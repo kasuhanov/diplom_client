@@ -60,8 +60,12 @@
             android:label="@string/title_activity_tour" >
         </activity>
         <activity
-            android:name=".HotelSelectActivity"
+            android:name=".activities.HotelSelectActivity"
             android:label="@string/title_activity_hotel_select" >
+        </activity>
+        <activity
+            android:name=".activities.RoomSelectActivity"
+            android:label="@string/title_activity_room_select" >
         </activity>
     </application>
 

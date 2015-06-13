@@ -10,12 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.user.testapp.HotelSelectActivity;
 import com.example.user.testapp.R;
 import com.example.user.testapp.REST.MarkAPI;
 import com.example.user.testapp.model.Country;
 import com.example.user.testapp.model.Hotel;
-import com.example.user.testapp.model.Mark;
 import com.example.user.testapp.model.Room;
 import com.example.user.testapp.util.CountryListAdapter;
 import com.example.user.testapp.util.NaviDrawer;
