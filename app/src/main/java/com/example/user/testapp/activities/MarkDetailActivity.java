@@ -90,10 +90,8 @@ public class MarkDetailActivity extends ActionBarActivity {
         NaviDrawer nd = new NaviDrawer(this,toolbar);
 
         markName.setText(getIntent().getStringExtra("name"));
-        //markDesc.setText(String.valueOf(getIntent().getExtras().getLong("id")));
         markDesc.setText(getIntent().getStringExtra("description"));
-        //ArrayAdapter<MarkComments> adapter = new CommentListAdapter(getApplicationContext(),getComments());
-        //commentsListView.setAdapter(adapter);
+
     }
     public void getComments(){
         //commentTxt.setText("");

@@ -56,8 +56,12 @@
             android:label="@string/title_activity_account" >
         </activity>
         <activity
-            android:name=".activities.TourActivity"
+            android:name=".activities.CountrySelectActivity"
             android:label="@string/title_activity_tour" >
+        </activity>
+        <activity
+            android:name=".HotelSelectActivity"
+            android:label="@string/title_activity_hotel_select" >
         </activity>
     </application>
 

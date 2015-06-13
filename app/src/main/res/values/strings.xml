@@ -11,4 +11,5 @@
     <string name="title_activity_lat_long_select">LatLongSelectActivity</string>
     <string name="title_activity_account">AccountActivity</string>
     <string name="title_activity_tour">TourActivity</string>
+    <string name="title_activity_hotel_select">HotelSelectActivity</string>
 </resources>

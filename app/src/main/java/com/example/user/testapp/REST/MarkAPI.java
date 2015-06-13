@@ -34,6 +34,9 @@ public interface MarkAPI {
     @GET("/?par=countries")
     void getCountries( Callback<List<Country>> response);
 
+    @GET("/?par=countries")
+    List<Country> getCountriesSync();
+
     @GET("/?par=hotel")
     void getHotels(@Header("country") long country_id, Callback<List<Hotel>> response);
 

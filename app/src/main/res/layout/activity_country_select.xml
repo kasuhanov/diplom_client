@@ -1,19 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.testapp.activities.TourActivity">
+    tools:context="com.example.user.testapp.activities.CountrySelectActivity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="getRefernses"
-        android:id="@+id/button2"
-        android:layout_centerVertical="true"
+        android:id="@+id/countryListView"
         android:layout_centerHorizontal="true"
-        android:onClick="getReferenses" />
+        android:layout_below="@+id/toolbar" />
 
 </RelativeLayout>

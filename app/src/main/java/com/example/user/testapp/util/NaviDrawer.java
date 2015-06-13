@@ -12,7 +12,7 @@ import com.example.user.testapp.activities.AccountActivity;
 import com.example.user.testapp.activities.MainActivity;
 import com.example.user.testapp.activities.MapActivity;
 import com.example.user.testapp.activities.MarkAddActivity;
-import com.example.user.testapp.activities.TourActivity;
+import com.example.user.testapp.activities.CountrySelectActivity;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
@@ -93,7 +93,7 @@ public class NaviDrawer {
                         }
 
                         if (iDrawerItem.getIdentifier() == 5) {
-                            Intent intent = new Intent(activity, TourActivity.class);
+                            Intent intent = new Intent(activity, CountrySelectActivity.class);
                             activity.startActivity(intent);
                         }
 
